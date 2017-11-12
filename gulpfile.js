@@ -51,13 +51,24 @@ gulp.task('style', ['css', 'copy-fonts'], function(){})
 gulp.task('js', function(){
     return gulp.src(
             [
-                './public/js/jquery.3.2.1.min.js',
-                './public/js/bootstrap.min.js',
-                './public/js/chartist.min.js',
-                './public/js/bootstrap-notify.js',
-                './public/js/light-bootstrap-dashboard.js',
-                './public/js/summernote.min.js',
-                './public/js/summernote-example.js'
+                './public/files/js/jquery-2.1.4.min.js',
+                './public/files/js/plugins.js',
+                './public/files/revolution/js/jquery.themepunch.tools.min.js',
+                './public/files/revolution/js/jquery.themepunch.revolution.min.js',
+                './public/files/revolution/js/extensions/revolution.extension.slideanims.min.js',
+                './public/files/revolution/js/extensions/revolution.extension.layeranimation.min.js',
+                './public/files/revolution/js/extensions/revolution.extension.navigation.min.js',
+                './public/files/revolution/js/extensions/revolution.extension.video.min.js',
+                './public/files/revolution/js/extensions/revolution.extension.actions.min.js',
+                './public/files/js/tweenMax.js',
+                './public/files/js/jquery.imagesloaded.min.js',
+                './public/files/js/jquery.smartscroll.min.js',
+                './public/files/js/jquery.isotope.min.js',
+                './public/files/js/jquery.min.phatvideobg.js',
+                './public/files/js/jquery.owl.carousel.min.js',
+                './public/files/js/jquery.lightcase.min.js',
+                './public/files/js/jribbble.min.js',
+                './public/files/js/script.js'
             ]
         )
         .pipe(gp_concat('vendor.min.js'))
@@ -81,6 +92,6 @@ gulp.task('watch', function() {
     gulp.watch(['./src/*/**.js', './src/*/*/**.js', './public/js/**.js'], ['js'])
 })
 
-gulp.task('prod', ['style'], function(){})
+gulp.task('prod', ['style', 'js'], function(){})
 
 gulp.task('default', ['watch'], function(){})
