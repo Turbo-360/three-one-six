@@ -4,8 +4,8 @@
   "server": false,
   "private": true,
   "scripts": {
-    "test": "",
-    "build": ""
+    "clean": "rm -rf ./public/dist",
+    "build": "npm run clean && NODE_ENV=production webpack && gulp prod"
   },
   "dependencies": {
     "turbo360": "latest",
@@ -14,7 +14,14 @@
   "devDependencies": {
     "express": "latest",
     "nodemon": "latest",
-    "rimraf": "latest"
+    "rimraf": "latest",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2"
   },
   "app": "5a0889f5dbfc750012654a8b",
   "deploy": [
