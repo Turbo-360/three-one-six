@@ -758,7 +758,7 @@ opacity:1
     font-size:13px;
     font-weight:700;
     text-transform:uppercase;
-    font-family:"Roboto Slab"
+    font-family:"Roboto Slab";
     margin-bottom:5px;
 }
 
@@ -800,8 +800,7 @@ website:    http://www.themepunch.com
     background: -o-linear-gradient(top,  #777777 0%,#666666 100%); 
     background: -ms-linear-gradient(top,  #777777 0%,#666666 100%); 
     background: linear-gradient(to bottom,  #777777 0%,#666666 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#777777", 
-    endColorstr="#666666",GradientType=0 ); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#777777", endColorstr="#666666",GradientType=0 ); 
 	padding:10px;
 	margin-left:-10px;margin-top:-10px;
 	box-sizing:content-box;
@@ -827,8 +826,7 @@ website:    http://www.themepunch.com
     background: -o-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top,  #ffffff 0%,#e1e1e1 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ffffff 0%,#e1e1e1 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", 
-    endColorstr="#e1e1e1",GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#e1e1e1",GradientType=0 ); /* IE6-9 */
 
 }
 .gyges .tp-bullet-image {
@@ -1419,7 +1417,7 @@ border-radius:6px;
     font-size:13px;
     font-weight:700;
     text-transform:uppercase;
-    font-family:"Roboto Slab"
+    font-family:"Roboto Slab";
     margin-bottom:5px;
 }
 
@@ -1805,8 +1803,7 @@ website:    http://www.themepunch.com
     background: -o-linear-gradient(top,  #999999 0%,#e1e1e1 100%); /* opera 11.10+ */
     background: -ms-linear-gradient(top,  #999999 0%,#e1e1e1 100%); /* ie10+ */
     background: linear-gradient(to bottom,  #999999 0%,#e1e1e1 100%); /* w3c */
-    filter: progid:dximagetransform.microsoft.gradient( 
-    startcolorstr="#999999", endcolorstr="#e1e1e1",gradienttype=0 ); /* ie6-9 */
+    filter: progid:dximagetransform.microsoft.gradient(startcolorstr="#999999", endcolorstr="#e1e1e1",gradienttype=0 ); /* ie6-9 */
 	border:3px solid #e5e5e5;
 	border-radius:50%;
 	cursor: pointer;
