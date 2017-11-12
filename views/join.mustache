@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+{{>head}}
+
+    <title>31.6 Beauty</title>
+
+</head>
+
+<body ng-app="316Beauty" ng-controller="JoinController" ng-init="init()">
+
+{{>loader}}
+
+
+<!-- PAGE CONTENT -->
+<div id="page-content">
+	
+	<!-- HEADER -->
+    <header id="header" class="wrapper transparent text-dark not-sticky">        
+        {{>nav}}
+    </header>
+    <!-- HEADER end -->
+	
+	<!-- PAGEBODY -->
+	<section id="page-body">
+    	<div class="spacer-big"></div>
+                        
+        <div class="wrapper align-center">
+            <i class="ion ion-ios-people ion-6x"></i><br/>
+            <h2>Join for exclusive <strong><em>discounts, articles &amp; tips</em></strong> - <br/>courtesy of <strong><em>Kelsie Ann</em></strong>.</h2>
+            <div class="spacer-medium"></div>
+            <div class="column one-full">
+                <form id="contact-form" class="checkform sendemail">
+                    <div class="form-row">
+                         <a href="/auth/facebook" class="sr-button button-big"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a>&nbsp; 
+                         <a href="/auth/instagram" class="sr-button button-big"><i class="fa fa-instagram fa-lg"></i> Instagram</a>
+                    </div>
+                </form>
+                <form id="contact-form" class="checkform sendemail" style="width:60%; margin-left:auto; margin-right:auto">
+                    <div class="form-row">
+                        <label for="name">Email</label>
+                        <input ng-model="profile.email" type="text" class="name" />
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Password</label>
+                        <input ng-model="profile.password" type="password" class="email"/>
+                    </div>
+                    <div class="form-row">
+                         <a ng-click="login()" href="#" class="sr-button button-medium style-2"><i style="color:#fff" class="fa fa-user"></i> Login</a>&nbsp; 
+                         <a ng-click="register()" href="#" class="sr-button button-medium style-2"><i style="color:#fff" class="fa fa-user"></i> Join</a>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="column one-half last-col">
+                <form id="contact-form" class="checkform sendemail">
+                    <div class="form-row">
+                        <label>Social Media Login</label>
+                         <a href="/auth/facebook" class="sr-button button-big"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a>&nbsp; 
+                         <a href="/auth/instagram" class="sr-button button-big"><i class="fa fa-instagram fa-lg"></i> Instagram</a>
+                    </div>
+                </form>
+            </div> -->
+
+               
+
+            <!-- <p><a class="sr-button-icon button-medium" href="http://player.vimeo.com/video/129976307" data-rel="lightcase"><i class="fa fa-play"></i></a></p> -->
+        </div> <!-- END .wrapper -->
+            
+       
+       	<div class="spacer-big"></div>
+                
+        {{>about}}
+       
+        <div class="spacer-big"></div>
+                         
+ 	</section>
+	<!-- PAGEBODY -->
+    {{>footer}}
+    
+</div> <!-- END #page-content -->
+<!-- PAGE CONTENT -->
+
+{{>scripts}}
+
+</body>
+</html>
