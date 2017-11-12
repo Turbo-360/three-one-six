@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf ./public/dist",
-    "build": "npm run clean && NODE_ENV=production webpack && gulp prod"
+    "build": "npm run clean && gulp prod"
   },
   "dependencies": {
     "turbo360": "latest",
